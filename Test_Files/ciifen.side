@@ -1,0 +1,944 @@
+{
+  "id": "66d2c5fe-6254-4e3b-86c3-d3d1273030a9",
+  "version": "2.0",
+  "name": "ciifen",
+  "url": "http://localhost:4200/",
+  "tests": [{
+    "id": "28870c33-8a94-4915-925b-1aa4839603e8",
+    "name": "Login_Exitoso",
+    "commands": [{
+      "id": "abb54230-e142-46cc-9c58-95652d1ac09d",
+      "comment": "",
+      "command": "open",
+      "target": "http://142.93.190.164:4200/auth/login?returnUrl=%2Fpluviogramas",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e123d230-eb7a-48ab-93da-e4269dc7d728",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b76069a-9464-4ae6-8ee6-c6d13b452fd9",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=.mb-4:nth-child(1) > #username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7e9d31f-49ca-4d4a-8f11-a351d4e2733d",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=.mb-4:nth-child(1) > #username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "root"
+    }, {
+      "id": "80a43e5b-432f-4aa3-a0c4-92d7a199d52a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-4:nth-child(2) > #username",
+      "targets": [
+        ["css=.mb-4:nth-child(2) > #username", "css:finder"],
+        ["xpath=(//input[@id='username'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "root"
+    }, {
+      "id": "266eb26f-629f-469b-bc35-043dc2d5ebef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Acceder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "714f6fe6-94de-4c29-a81a-bfc9dc5f0b41",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.URL;",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "cee65fdb-4b06-4ef0-be0b-b1aca95ade3e",
+      "comment": "",
+      "command": "assert",
+      "target": "url",
+      "targets": [],
+      "value": "http://142.93.190.164:4200/pluviogramas"
+    }]
+  }, {
+    "id": "551218d6-6f33-4919-a3b1-c7e6ad41669b",
+    "name": "Login_fallido",
+    "commands": [{
+      "id": "5d1c2c53-2fd6-4203-88bf-1978a37ea7c2",
+      "comment": "",
+      "command": "open",
+      "target": "http://142.93.190.164:4200/auth/login?returnUrl=%2Fpluviogramas",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54020a99-fbc8-448d-89ed-f6779799eea8",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=.mb-4:nth-child(1) > #username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd4ebde6-c4f8-4526-bd8c-c950f1fedbca",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=.mb-4:nth-child(1) > #username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "root"
+    }, {
+      "id": "6dbaac84-f849-41aa-8333-23bfde510e4c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-4:nth-child(2) > #username",
+      "targets": [
+        ["css=.mb-4:nth-child(2) > #username", "css:finder"],
+        ["xpath=(//input[@id='username'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "bbb5c6e9-da03-40e6-9042-d18115fe9371",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Acceder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6907c3f4-6a91-437d-a5f4-6809d9945ea0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Acceder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5761873f-708c-402b-811c-fbced60a4783",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Acceder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cdbf32e-af72-4a5f-b6e9-b2a32e74701c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a595eef-c8d3-4e85-97e8-7f21b85fb0f2",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=swal2-title",
+      "targets": [
+        ["id=swal2-title", "id"],
+        ["css=#swal2-title", "css:finder"],
+        ["xpath=//h2[@id='swal2-title']", "xpath:attributes"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Hay un Problema')]", "xpath:innerText"]
+      ],
+      "value": "Hay un Problema"
+    }]
+  }, {
+    "id": "c336c8ef-7e20-4af2-b60f-9b38eea52d37",
+    "name": "Creación de estación",
+    "commands": [{
+      "id": "19c48762-5e6d-458f-9cee-477d33a74df3",
+      "comment": "",
+      "command": "open",
+      "target": "http://142.93.190.164:4200/inventario/estaciones",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ccb243b-40f9-41ea-9039-f237efa15008",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-azul",
+      "targets": [
+        ["css=.btn-azul", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Añadir Estacion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "846fc418-b62c-4503-ac46-d1c01822ec14",
+      "comment": "",
+      "command": "click",
+      "target": "id=nombre",
+      "targets": [
+        ["id=nombre", "id"],
+        ["css=#nombre", "css:finder"],
+        ["xpath=//input[@id='nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccdb6be3-a5b6-4d93-8f4e-2fa1c3ec8403",
+      "comment": "",
+      "command": "type",
+      "target": "id=nombre",
+      "targets": [
+        ["id=nombre", "id"],
+        ["css=#nombre", "css:finder"],
+        ["xpath=//input[@id='nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Estación3"
+    }, {
+      "id": "ed87d2ff-0edf-49ef-92fe-a6f8f05aa45d",
+      "comment": "",
+      "command": "click",
+      "target": "id=latitud",
+      "targets": [
+        ["id=latitud", "id"],
+        ["css=#latitud", "css:finder"],
+        ["xpath=//input[@id='latitud']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d74adf18-1c9c-4fed-a4e7-69f7b5d88295",
+      "comment": "",
+      "command": "type",
+      "target": "id=latitud",
+      "targets": [
+        ["id=latitud", "id"],
+        ["css=#latitud", "css:finder"],
+        ["xpath=//input[@id='latitud']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "121"
+    }, {
+      "id": "7a3858ea-a3a3-4368-8d83-328a5e66790c",
+      "comment": "",
+      "command": "click",
+      "target": "id=longitud",
+      "targets": [
+        ["id=longitud", "id"],
+        ["css=#longitud", "css:finder"],
+        ["xpath=//input[@id='longitud']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "495ac124-07fe-425f-bb90-c2fb8211ba27",
+      "comment": "",
+      "command": "type",
+      "target": "id=longitud",
+      "targets": [
+        ["id=longitud", "id"],
+        ["css=#longitud", "css:finder"],
+        ["xpath=//input[@id='longitud']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "122"
+    }, {
+      "id": "66c008c3-7f8b-4e1e-9c5c-1babcea28138",
+      "comment": "",
+      "command": "click",
+      "target": "id=altitud",
+      "targets": [
+        ["id=altitud", "id"],
+        ["css=#altitud", "css:finder"],
+        ["xpath=//input[@id='altitud']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5b37aa4-93e0-4d93-b879-18ab8bab3025",
+      "comment": "",
+      "command": "type",
+      "target": "id=altitud",
+      "targets": [
+        ["id=altitud", "id"],
+        ["css=#altitud", "css:finder"],
+        ["xpath=//input[@id='altitud']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "a3a74886-e6ae-429c-a539-f93647d58983",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Crear')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26d89b88-f9ea-4d37-ade9-644d5071b753",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "64dba945-73e3-4743-8cdc-5970ec2d70b8",
+    "name": "Creación de instrumento",
+    "commands": [{
+      "id": "368108b8-a1ce-47e7-8aa1-c84a1146d41e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/pluviogramas",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d81f1fa3-35a8-469d-a0c3-82dc0b0c6f95",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20b55a4a-9b16-4e0e-bac0-0dfd352239bb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.sidebar-toggler:nth-child(1)",
+      "targets": [
+        ["css=.sidebar-toggler:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(@href, '')])[7]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "956e6df1-e384-446c-a366-bdd984ff8804",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sidebar-toggler:nth-child(1)",
+      "targets": [
+        ["css=.sidebar-toggler:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(@href, '')])[7]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbe2bc89-a163-4dfc-bf6c-8f8f9a07c0cf",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.sidebar-toggler:nth-child(1)",
+      "targets": [
+        ["css=.sidebar-toggler:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(@href, '')])[7]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "940ad4fd-23aa-4931-afa7-c8d28d99b37c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(2) .link-title",
+      "targets": [
+        ["css=.nav-item:nth-child(2) .link-title", "css:finder"],
+        ["xpath=//ul[@id='sidebar-menu']/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Instrumentos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ef1715b-2112-4005-bc7e-37a5329f68f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Añadir Instrumento')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9f9927e-5383-4bea-b8c2-16eeda4edaad",
+      "comment": "",
+      "command": "click",
+      "target": "id=codigo",
+      "targets": [
+        ["id=codigo", "id"],
+        ["css=.col-md-6:nth-child(1) > #codigo", "css:finder"],
+        ["xpath=//input[@id='codigo']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8962876-e4c4-4e4d-a2da-0a7ea758bbf8",
+      "comment": "",
+      "command": "type",
+      "target": "id=codigo",
+      "targets": [
+        ["id=codigo", "id"],
+        ["css=.col-md-6:nth-child(1) > #codigo", "css:finder"],
+        ["xpath=//input[@id='codigo']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "1903i91"
+    }, {
+      "id": "274f2475-cb51-492d-b4b7-df3bb78891f5",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipo",
+      "targets": [
+        ["id=tipo", "id"],
+        ["css=#tipo", "css:finder"],
+        ["xpath=//input[@id='tipo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38c6cf4d-0143-47a7-a8df-44a4f71210ae",
+      "comment": "",
+      "command": "type",
+      "target": "id=tipo",
+      "targets": [
+        ["id=tipo", "id"],
+        ["css=#tipo", "css:finder"],
+        ["xpath=//input[@id='tipo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2941289"
+    }, {
+      "id": "a90c0f15-b050-4ede-aa95-cd53ea73f0eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-6:nth-child(3) > #codigo",
+      "targets": [
+        ["css=.col-md-6:nth-child(3) > #codigo", "css:finder"],
+        ["xpath=(//input[@id='codigo'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "358b079b-24a3-407f-93fe-2714ee36f311",
+      "comment": "",
+      "command": "type",
+      "target": "css=.col-md-6:nth-child(3) > #codigo",
+      "targets": [
+        ["css=.col-md-6:nth-child(3) > #codigo", "css:finder"],
+        ["xpath=(//input[@id='codigo'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1903i91"
+    }, {
+      "id": "8dbd610d-35a5-4331-a00e-4cf6e02f1b3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=modelo",
+      "targets": [
+        ["id=modelo", "id"],
+        ["css=#modelo", "css:finder"],
+        ["xpath=//input[@id='modelo']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d21c4685-4b94-4a08-8824-fa19c9423722",
+      "comment": "",
+      "command": "type",
+      "target": "id=modelo",
+      "targets": [
+        ["id=modelo", "id"],
+        ["css=#modelo", "css:finder"],
+        ["xpath=//input[@id='modelo']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "nijugnws"
+    }, {
+      "id": "025298c3-9504-411b-8f85-af86e424eac3",
+      "comment": "",
+      "command": "click",
+      "target": "id=serial",
+      "targets": [
+        ["id=serial", "id"],
+        ["css=#serial", "css:finder"],
+        ["xpath=//input[@id='serial']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7274c8f-c41e-4ca7-a957-e8cdcfe75526",
+      "comment": "",
+      "command": "type",
+      "target": "id=serial",
+      "targets": [
+        ["id=serial", "id"],
+        ["css=#serial", "css:finder"],
+        ["xpath=//input[@id='serial']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "gfedsagfs"
+    }, {
+      "id": "38828765-3be9-46e0-8119-5b143ed1b814",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Crear')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "125823d8-d403-477a-b134-09af9bdd0785",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=swal2-title",
+      "targets": [
+        ["id=swal2-title", "id"],
+        ["css=#swal2-title", "css:finder"],
+        ["xpath=//h2[@id='swal2-title']", "xpath:attributes"],
+        ["xpath=//div[3]/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Instrumento creado')]", "xpath:innerText"]
+      ],
+      "value": "Instrumento creado"
+    }]
+  }, {
+    "id": "0023db2a-1d2e-4eb5-8877-0c4f2a589a23",
+    "name": "Creación de pluviograma",
+    "commands": [{
+      "id": "a44ee68c-52b4-4c08-b2d6-364a79e1eecd",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/pluviogramas",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c91474e5-4e75-4ee3-8cf7-00fe00fcbd12",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5aab1da1-293a-4173-80a9-4858a32b5e5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Añadir Pluviograma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33291dee-027e-47d8-9c59-31592ec04d0b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Añadir Pluviograma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfdd969a-9ab1-4b53-9bdd-4c8cfc8537a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=fecha_inicio",
+      "targets": [
+        ["id=fecha_inicio", "id"],
+        ["name=fecha_inicio", "name"],
+        ["css=#fecha_inicio", "css:finder"],
+        ["xpath=//input[@id='fecha_inicio']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e62c126-79fd-4130-ac48-2df78de5ef1f",
+      "comment": "",
+      "command": "type",
+      "target": "id=fecha_inicio",
+      "targets": [
+        ["id=fecha_inicio", "id"],
+        ["name=fecha_inicio", "name"],
+        ["css=#fecha_inicio", "css:finder"],
+        ["xpath=//input[@id='fecha_inicio']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "2023-08-15T09:24"
+    }, {
+      "id": "0a082b86-c3d7-4846-beaa-81446205964f",
+      "comment": "",
+      "command": "click",
+      "target": "id=fecha_fin",
+      "targets": [
+        ["id=fecha_fin", "id"],
+        ["name=fecha_fin", "name"],
+        ["css=#fecha_fin", "css:finder"],
+        ["xpath=//input[@id='fecha_fin']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc6ad416-f306-49fe-bf69-b71be7bbf1ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=fecha_fin",
+      "targets": [
+        ["id=fecha_fin", "id"],
+        ["name=fecha_fin", "name"],
+        ["css=#fecha_fin", "css:finder"],
+        ["xpath=//input[@id='fecha_fin']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2023-08-15T21:24"
+    }, {
+      "id": "ba4e80dd-7c9f-4e5f-8a41-871826b96118",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-body",
+      "targets": [
+        ["css=.card-body", "css:finder"],
+        ["xpath=//app-pluviogramas-create/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da3986be-6d1c-4e16-bf06-bb2775e8e638",
+      "comment": "",
+      "command": "click",
+      "target": "id=modelo",
+      "targets": [
+        ["id=modelo", "id"],
+        ["css=#modelo", "css:finder"],
+        ["xpath=//input[@id='modelo']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43ef3dd2-1857-4258-86ab-6a911c0408fd",
+      "comment": "",
+      "command": "type",
+      "target": "id=modelo",
+      "targets": [
+        ["id=modelo", "id"],
+        ["css=#modelo", "css:finder"],
+        ["xpath=//input[@id='modelo']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "safsaf"
+    }, {
+      "id": "1b657831-a862-4110-a84e-2b72d46090bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=ruta",
+      "targets": [
+        ["id=ruta", "id"],
+        ["css=#ruta", "css:finder"],
+        ["xpath=//input[@id='ruta']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8bd5e97-b5f9-4a02-b5b7-2b721fa8e483",
+      "comment": "",
+      "command": "type",
+      "target": "id=ruta",
+      "targets": [
+        ["id=ruta", "id"],
+        ["css=#ruta", "css:finder"],
+        ["xpath=//input[@id='ruta']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "hola2"
+    }, {
+      "id": "ba037c32-90bd-4983-ba4b-925289665dab",
+      "comment": "",
+      "command": "click",
+      "target": "id=estacion",
+      "targets": [
+        ["id=estacion", "id"],
+        ["css=#estacion", "css:finder"],
+        ["xpath=//select[@id='estacion']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ed9cf48-cefb-40e8-afca-92ea3822cd8b",
+      "comment": "",
+      "command": "select",
+      "target": "id=estacion",
+      "targets": [],
+      "value": "label=Xavier"
+    }, {
+      "id": "0367cbb4-ce33-468f-add2-ebd402818ea2",
+      "comment": "",
+      "command": "click",
+      "target": "id=instrumento",
+      "targets": [
+        ["id=instrumento", "id"],
+        ["css=#instrumento", "css:finder"],
+        ["xpath=//select[@id='instrumento']", "xpath:attributes"],
+        ["xpath=//div[6]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfc373b8-b3ae-4f82-8980-e289652d52a7",
+      "comment": "",
+      "command": "select",
+      "target": "id=instrumento",
+      "targets": [],
+      "value": "label=1903i91"
+    }, {
+      "id": "7efc9502-4012-48bf-8366-6cc68323a4c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=imagen",
+      "targets": [
+        ["id=imagen", "id"],
+        ["css=#imagen", "css:finder"],
+        ["xpath=//input[@id='imagen']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e2a0bd1-1e98-4d89-a7e5-f7dada4c9bb9",
+      "comment": "",
+      "command": "type",
+      "target": "id=imagen",
+      "targets": [
+        ["id=imagen", "id"],
+        ["css=#imagen", "css:finder"],
+        ["xpath=//input[@id='imagen']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\pluviograma.jpg"
+    }, {
+      "id": "1e8dfbbd-b3c3-4510-b4ff-39aec9a944a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-info",
+      "targets": [
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Digitalizar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0ca21f2-81e7-4b15-ab34-690c7e7af28a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-info",
+      "targets": [
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Digitalizar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5e1a039-11d1-46d2-939c-12f5d4a9a00b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-info",
+      "targets": [
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Digitalizar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fc97b18-a9c6-4a68-aec0-535e2975225c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Autofix')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d935033-e499-4774-badb-255abc72c858",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Autofix')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af0b41ac-1cfe-4746-8445-19776e3435ba",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Autofix')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f14646d4-0f5a-4208-9a86-7e39d1e10610",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-close",
+      "targets": [
+        ["css=.btn-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fab6d29-d63b-4d77-8780-29ed482c654c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Crear')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fc2a566-1ab1-4e81-9219-a26ab58b4563",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-popup",
+      "targets": [
+        ["css=.swal2-popup", "css:finder"],
+        ["xpath=//body/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c339969-f04a-45d8-8402-e08fefd2e816",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4f63f3b5-bb0d-41f7-9e00-e2b5fd4cb595",
+    "name": "ver pluviograma",
+    "commands": [{
+      "id": "3a6a2e4e-fff7-4f55-85cc-34e9b99b7883",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/pluviogramas",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "947f52db-34e7-4080-8aa1-3f2a196a59f4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td:nth-child(5)",
+      "targets": [
+        ["css=td:nth-child(5)", "css:finder"],
+        ["xpath=//td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'Xavier')]", "xpath:innerText"]
+      ],
+      "value": "Xavier"
+    }]
+  }, {
+    "id": "07075b34-213f-4b62-ae4b-14328d8ea139",
+    "name": "editar pluviograma",
+    "commands": [{
+      "id": "ba8cf89e-cd05-49b9-9cd8-87f5ce50be69",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/pluviogramas",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecbb9b38-ab0f-4561-babe-c0565c2c9086",
+      "comment": "",
+      "command": "click",
+      "target": "css=.feather-edit",
+      "targets": [
+        ["css=.feather-edit", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9235b98-6519-4144-8181-12a4bdd7fd2b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.my-4",
+      "targets": [
+        ["css=.my-4", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Editar Pluviograma')]", "xpath:innerText"]
+      ],
+      "value": "Editar Pluviograma"
+    }]
+  }],
+  "suites": [{
+    "id": "5ac49177-a7c1-42cd-82f5-006c7f280017",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["28870c33-8a94-4915-925b-1aa4839603e8"]
+  }],
+  "urls": ["http://142.93.190.164:4200/", "http://localhost:4200/"],
+  "plugins": []
+}
